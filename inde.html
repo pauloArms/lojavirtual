@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/output.css" />
+    
+    <title>Dev Burguer - A Melhor Hamburgueria</title>
+</head>
+<body class="">
+    <!--header-->
+
+    <header class="w-full h-[420px] bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col items-center justify-center">
+            <img 
+            class="w-32 h-32 rounded-full hover:scale-90 cursor-pointer duration-200" 
+            src="./assets/hamb-1.png" 
+            alt="logo Dev Burguer" />
+            <h1 class="text-3xl text-white font-bold mt-4 mb-2 text-center">Deb Burguer</h1>
+            <span class="text-white font-medium">Rua da Imbuia, 640, casa 1 - Embu - Colombo</span>
+            <div class="mt-4 bg-green-600 px-4 py-1 rounded-lg " id = "date-span">
+                <span class="text-white">Seg à Dom - 18:00 as 23:00 </span>
+            </div>
+        </div>
+    </header>
+    <!--fim do Header-->
+    <h2 class="text-2xl font-bold text-center mt-6 mb-9">Conheça o Nosso Cardapio</h2>
+
+    <!--Inicio Menu-->
+
+    <div id="menu" >
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-20">
+    <!--Inicio produto-->
+            <div class="flex ">
+                <img
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300" 
+                src="./assets/hamb-1.png" 
+                alt="Hambuerguer Smash" />
+            
+            
+            <div class="ml-6">
+                <p class="font-bold">Hamburguer Smash</p>
+                <p class="text-sm mt-2" >O hambúrguer smash é feito ao pressionar a carne na chapa, criando uma crosta crocante e suculenta.<br> Simples e delicioso.</p>
+                
+                <div class="flex gap-2 mt-4 justify-between">
+                    <p class="font-bold">R$ 18.90</p>
+                    <button 
+                        data-name = 'Hamburguer Smash'
+                        data-price = '18.90'
+                        class="bg-gray-900 px-5 rounded add-to-cart--btn">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+          <!--fim do produto-->
+
+        <!--Inicio produto 2 -->
+        <div class="flex ">
+            <img
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300" 
+            src="./assets/hamb-2.png" 
+            alt="Hambuerguer Smash" />
+        
+        
+        <div class="ml-6">
+            <p class="font-bold">Hamburguer Dublo</p>
+            <p class="text-sm mt-2" >O hambúrguer Dublo é feito ao pressionar a carne na chapa, criando uma crosta crocante e suculenta.<br> Simples e delicioso.</p>
+            
+            <div class="flex gap-2 mt-4 justify-between">
+                <p class="font-bold">R$ 32.90</p>
+                <button 
+                    data-name = 'Hamburguer Dublo'
+                    data-price = '18.90'
+                    class="bg-gray-900 px-5 rounded add-to-cart--btn">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--fim do produto 2-->
+    <!--Inicio produto 3 -->
+
+        <div class="flex ">
+            <img
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300" 
+                src="./assets/hamb-3.png" 
+                alt="Hambuerguer Smash" />
+            
+            
+            <div class="ml-6">
+                <p class="font-bold">Hamburguer Triplo</p>
+                <p class="text-sm mt-2" >O hambúrguer Tripo é feito ao pressionar a carne na chapa, criando uma crosta crocante e suculenta.<br> Simples e delicioso.</p>
+                
+                <div class="flex gap-2 mt-4 justify-between">
+                    <p class="font-bold">R$ 45.90</p>
+                    <button 
+                        data-name = 'Hamburguer Triplo'
+                        data-price = '45.90'
+                        class="bg-gray-900 px-5 rounded add-to-cart--btn">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    <!--fim do produto 3-->
+
+    <!--Inicio produto 4 -->
+
+    <div class="flex ">
+        <img
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300" 
+            src="./assets/hamb-4.png" 
+            alt="Hambuerguer Smash" />
+        
+        
+        <div class="ml-6">
+            <p class="font-bold">Hamburguer Smash 2</p>
+            <p class="text-sm mt-2" >O hambúrguer Dublo é feito ao pressionar a carne na chapa, criando uma crosta crocante e suculenta.<br> Simples e delicioso.</p>
+            
+            <div class="flex gap-2 mt-4 justify-between">
+                <p class="font-bold">R$ 28.90</p>
+                <button 
+                    data-name = 'Hamburguer Smash 2'
+                    data-price = '28.90'
+                    class="bg-gray-900 px-5 rounded add-to-cart--btn">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+        <!--fim do produto 4-->
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">Bebidas</h2>
+        </div>
+        
+        <!--Inicio grid Bebidas  -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-20" id = 'menu'>
+            <div class="flex ">
+                <img
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300" 
+                    src="./assets/refri-1.png" 
+                    alt="Coca Cola" />
+                
+                
+                <div class="ml-6">
+                    <p class="font-bold">Coca Cola</p>
+                    <p class="text-sm mt-2" >Uma bebida refrescante, gelada e feita com ingredientes naturais. Perfeita para acompanhar qualquer refeição.</p>
+                    
+                    <div class="flex gap-2 mt-4 justify-between">
+                        <p class="font-bold">R$ 3.50</p>
+                        <button 
+                            data-name = 'Coca Cola'
+                            data-price = '3.50'
+                            class="bg-gray-900 px-5 rounded add-to-cart--btn">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+             <!--Inicio  Bebidas 2  -->
+       
+            <div class="flex ">
+                <img
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-3 duration-300" 
+                    src="./assets/refri-2.png" 
+                    alt="Guarana" />
+                
+                
+                <div class="ml-6">
+                    <p class="font-bold">Guarana</p>
+                    <p class="text-sm mt-2" >Uma bebida refrescante, gelada e feita com ingredientes naturais. Perfeita para acompanhar qualquer refeição.</p>
+                    
+                    <div class="flex gap-2 mt-4 justify-between">
+                        <p class="font-bold">R$ 3.50</p>
+                        <button 
+                            data-name = 'Guarana'
+                            data-price = '3.50'
+                            class="bg-gray-900 px-5 rounded add-to-cart--btn">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+       
+        <!--fim  Bebidas 2  -->
+        </div>
+        <!--fim grid Bebidas  -->
+
+       
+    </div>
+    <!--fim do Menu-->
+
+    <!--Inicio modal-->
+
+        <div 
+        id="cart-modal"
+        class="w-full h-full bg-black/60 fixed top-0 left-0 z-[99] items-center justify-center hidden">
+            <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+                <h2 class="font-bold mb-2 text-2xl text-center">Meu carrinho</h2>
+                <div id="cart-items" class="flex justify-between mb-2 flex-col">
+                    
+                </div>
+
+                <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+                <p class="font-bold mt-4">Endereço de entrega: </p>
+                <input 
+                class="w-full border-2 p-2 rounded my-2" 
+                id="eddress"
+                type="text" 
+                placeholder="Digite seu Endereço " />
+
+                <p class="text-red-500 hidden my-4" id="address-warn">Digite Seu Endereço Completo!</p>
+                <div class="flex items-center justify-between ">
+                    <button class="font-bold border-black border-4 px-4 py-1 rounded shadow" id="close-modal-btn">Fechar</button>
+                    <button class="bg-green-600 px-4 py-1 text-white rounded" id="checkout-btn">Finalizar Pedido</button>
+                </div>
+            </div>
+
+        </div>
+
+     <!--fim modal-->
+
+    <footer class=" w-full bg-red-500 py-2 fixed bottom-0 z-40 flex justify-center items-center">
+        <button 
+        id="cart-btn"
+        class="text-white font-bold flex items-center gap-2">
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-white text-lg"></i>
+        </button>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
+
+
