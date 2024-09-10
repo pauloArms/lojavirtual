@@ -12,8 +12,8 @@ let addressWarn = document.querySelector('#address-warn')
 let cart = []
 
 //abrir o modal do carrinho
-cartBtn.addEventListener('click', () =>{
-    modal.style.display = 'flex'
+cartBtn.addEventListener('click',() =>{
+    modal.style.display = 'flex' 
     updateCartModal()
 })
 //Fechar o modal do carrinho clicando na div 
