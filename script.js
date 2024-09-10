@@ -33,9 +33,22 @@ menu.addEventListener('click', (e)=>{
     if(parentButton){
         let name = parentButton.getAttribute('data-name')
         let price = Number(parentButton.getAttribute('data-price'))
+
+        Toastify({
+            text: "Item Adicionado no Carrinho ",
+            duration: 3000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+            background: "linear-gradient(to right, #66c058, #33a02c)",
+            },
+           }).showToast()
         
        //Adicionar no carrinho
         adicionaCarrinho(name, price)
+
 
     }
 })
@@ -148,8 +161,8 @@ function updateCartModal(){
             },
            }).showToast()
            return 
+           
         }
-
 
 
 
